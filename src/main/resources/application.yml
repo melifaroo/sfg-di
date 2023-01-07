@@ -1,0 +1,29 @@
+spring:
+    profiles:
+        active: 
+            -   dev
+            -   EN
+            -   dog
+guru:
+    username : superuser
+    password : dbPassword
+    jdbcurl : someURLforDB
+
+
+---
+spring:
+    profiles: dev    
+guru:
+    username : DEV_username,
+    password : DEV_dbpassword,
+    jdbcurl : URLforDEVDB
+
+
+---
+spring:
+    profiles: qa    
+guru:
+    username : QA_username
+    password : QA_dbpassword
+    jdbcurl : URLforQADB
+
